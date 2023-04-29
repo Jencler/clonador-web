@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "sf-pro-black";
+    src: url(../font/SF-Pro-Text-Black.otf)
+}
+@font-face {
+    font-family: "sf-pro-bold";
+    src: url(../font/SF-Pro-Text-Bold.otf);
+}
+@font-face {
+    font-family: "sf-pro-heavy";
+    src: url(../font/SF-Pro-Text-Heavy.otf)
+}
+@font-face {
+    font-family: "sf-pro-light";
+    src: url(../font/SF-Pro-Text-Light.otf);
+}
+@font-face {
+    font-family: "sf-pro-mediumn";
+    src: url(../font/SF-Pro-Text-Medium.otf);
+}
+@font-face {
+    font-family: "sf-pro-regular";
+    src: url(../font/SF-Pro-Text-Regular.otf)
+}
+@font-face {
+    font-family: "sf-pro-semibold";
+    src: url(../font/SF-Pro-Text-Semibold.otf);
+}
+
+
+:root{
+    /* Backgrounds colors */
+    --bg-light: #fff;
+    --bg-light-2: #fbfbfd;
+    --bg-light-3: #f5f5f7;
+    --bg-grey: #424245;
+    --bg-dark: #000;
+    --bg-dark-2: #1d1d1f;
+    --bg-dark-3: #161617;
+    --bg-dark-4: #15150e;
+
+
+    /* Text colors */
+    --text-light: #fff;
+    --text-light-2: #f5f5f7;
+    --text-gray: #424245;
+    --text-gray-2: #6e6e73;
+    --text-grey-3: #86868b;
+    --text-dark: #000;
+    --text-dark-2: #1d1d1f;
+    --text-blue: #0066cc ;
+
+      /* Border colors */
+      --border-light: #fff;
+      --border-grey: #d2d2d7;
+    
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+
+
+
+html{
+    font-family: "sf-pro-light";
+}
+
+
+/* ------Menu----- */
+.nav-item{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0,0,0.8);
+    padding: 0 12px;
+    position: fixed;
+}
+
+.nav-icon{
+    display: block;
+    width: 16px;
+}
+
+/* ----main---- */
+
+.main{
+    padding-top: 48px;
+    
+}
+
+.ukrania{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   background-color: var(--bg-light-3);
+}
+.ukrania-container{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 15px 0;
+
+}
+.ukrania-container a{
+    color: var(--text-blue);
+    font-size: 14px;
+    line-height: 21px;
+    font-family: "sf-pro-light";
+    font-weight: 400;
+    text-align: center;
+    margin-top: 4px;
+}
+.container-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-ukrania{
+    width: 106px;
+}
+
+
+/* ---Home pages---- */
+
+.home-pages {
+    width: 100%;
+    display: grid;
+    gap: 12px;
+    
+
+}
+
+.home-pages-one{
+    width: 100%;  
+    background-color: var(--bg-light-2);
+
+
+}
+
+.home-pages-one .macbookair{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
+
+}
+.pintar{
+    background-color: var(--bg-light-3);
+}
+
+/* .macbookair .title{
+    width: 65%;
+    font-family: "sf-pro-semibold";
+    font-size: 32px;
+    line-height: 25px;
+} */
+
+ .macbookair-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+.macbookair-container .title{
+    font-family: "sf-pro-semibold";
+    font-size: 32px;
+    line-height: 35px;
+    margin-top: 6px;
+}
+.macbookair-container .title span{
+    color: #ca2166;
+}
+.macbookair-container .description{
+    font-size: 18px;
+    color: #cd3171;
+    font-family: "sf-pro-regular";
+    margin: 4px 30px 0 30px;
+    
+}
+.macbookair-container .logo-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+}
+.macbookair-container .logo-container img{
+    width: 180px;    
+}
+
+.macbookair-container .link{
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--text-blue);
+    font-family: "sf-pro-regular";
+    margin-bottom: 8px;
+}
+.macbookair-container .link-2{
+    margin-left: 27px;
+}
+/* .container-macbookair-image{
+
+}
+.image-macbookair-container{
+     
+}
+
+.image-macbookair-container img{
+    
+}
+ */

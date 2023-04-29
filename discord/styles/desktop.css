@@ -1,0 +1,40 @@
+
+@media screen and (min-width: 1041px){
+    :root{ 
+        /* Backgrounds Colors */
+        --bg-white: #ffffff;
+        --bg_light: #f6f6f6;
+        --bg-blue-light: #5865f2;
+        --bg-blue-dark: #404eed;
+        --bg-dark: #23272a;
+
+        /* Text Colors */
+        --text-white: #ffffff;
+        --text-skyblue: #00b0f4;
+        --text-blue: #5865f2;
+        --text-purple: #551a8b;
+        --text-gray: #23272a;
+        --text-black: #000000;
+
+    }
+    html{
+        font-family: 'Poppins', sans-serif;
+        font-size: 62.5%;
+
+    }
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container_button{
+        display: flex;
+        align-items: center;
+    }
+    .container_button .button{
+        margin: 0;
+        margin-right: 24px;
+    }
+}

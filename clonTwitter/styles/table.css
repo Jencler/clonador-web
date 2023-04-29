@@ -1,0 +1,19 @@
+@media (min-width: 500px){
+
+    .main .title {
+        font-size: 6.2rem;
+        line-height: 80px;
+        letter-spacing: 4px;
+        
+    }
+    .main .subtitle {
+        font-size: 3.4rem;
+        line-height: 34px;
+        letter-spacing: 2px;
+    }
+
+    .login{
+        max-width: 320px;
+
+    }
+} 

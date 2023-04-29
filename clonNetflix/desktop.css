@@ -1,0 +1,43 @@
+@media (min-width:950px){
+    h1{
+        color: var(--text-blanco);
+        font-family: "helvetica";
+        font-size: 54px;
+        line-height: 58px;
+        padding: 0 90px;
+    }
+
+
+
+   .input-desktop{
+       display: flex;
+       align-items: center;
+    }
+
+    .form input {
+        height: 56px;
+        padding: 10px 10px 0;
+        width: 100%;
+        font-size: 14px;
+        background-color: var(--bg-blanco);
+        color: var(--text-gris);
+        margin-top: 12px;
+        border: none;
+        border-radius: 2px 0 0 2px;
+    }
+
+
+
+    .input-desktop .button{
+        align-items: center;
+        display: inline-flex;
+        padding: 0 16px;
+        font-size: 16px;
+        color: var(--text-blanco);
+        background-color: var(--bg-rojo);
+        border: none;
+        border-radius: 0 2px 2px 0;
+        height: 56px;
+        white-space: nowrap;
+    }
+}
