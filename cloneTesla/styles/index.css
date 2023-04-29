@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    scroll-snap-type: y mandatory;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+}
+
+
+
+
+
+.nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blue; */
+    padding: 0 14px 0 10px;
+    position: relative;
+}
+.logotipo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu {
+    border: none;
+    padding: 6px 16px;
+    background-color: rgba(0, 0, 0, 0.087);
+    border-radius: 4px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+/* ----------------NAVEGACION DESKTOP---------------- */
+
+.lista{
+    display: none;
+}
+
+
+
+
+
+
+
+/* ------------ASIDE MENU------------------- */
+
+.aside{
+    width: 280px;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    opacity: 0;
+    z-index: -10;
+    clip-path: circle(5% at top right);
+    transition: clip-path 0.4s cubic-bezier(.62,.4,.12,.68);
+    
+}
+.active{
+    opacity: 1;
+    z-index: 4000;
+    clip-path: circle(150% at top right);
+
+}
+
+
+.aside::-webkit-scrollbar {
+    display: none;
+}
+.aside__header{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    margin-bottom: 12px;
+}
+.container_icon_close{
+    cursor: pointer;
+}
+.aside__text{
+    width: 100%;
+    height: auto;
+    padding: 8px 32px 48px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
+    
+}
+.aside__text p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #414448;
+    cursor: pointer;
+}
+
+
+/* ------------Main------------ */
+.autos_tesla{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.car__red{
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+.car__red img{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.text{
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 4000;
+}
+.text h1{
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: #171a20;
+}
+.text p{
+    font-size: 1.5rem;
+    border-bottom: 1px solid #17191e;
+    cursor: pointer;
+    
+}
+.botones{
+    width: 100%;
+    padding: 0 24px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 4000;
+}
+.botones button:nth-child(1){
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #383b40;
+    color: #fefefe;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+
+.botones button:nth-child(2){
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #dddddd;
+    color: #393c41;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.icon_arrow{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.icon_arrow img{
+    animation-name: saltar;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes saltar {
+    0%{transform: translateY(0);}
+    25%{transform: translateY(4px);}
+    50%{transform: translateY(-6px);}
+    75%{transform: translateY(4px);}
+    100%{transform: translateY(0);}
+}
+
+
+/* ----------------------------------- */
+
+.car__blue{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    scroll-snap-align: center;
+
+}
+.car__blue img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.text{
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 4000;
+}
+.text h1{
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: #171a20;
+    white-space: nowrap;
+}
+.text p{
+    font-size: 1.5rem;
+    border-bottom: 1px solid #17191e;
+    white-space: nowrap;
+    cursor: pointer;
+    
+}
+.botones{
+    width: 100%;
+    padding: 0 24px;
+    position: absolute;
+    bottom: 46px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 4000;
+}
+
+.botones button:nth-child(1){
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #383b40;
+    color: #fefefe;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.botones button:nth-child(2){
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #dddddd;
+    color: #393c41;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* -----------FOOTER--------------- */
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 0;
+}
+.footer p{
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #64666a;
+    cursor: pointer;
+}
+
+/* -------------MEDIA QUERIES---------------- */
+
+    @media (min-width:600px) {
+
+    /* ----------BOTONES MEDIA QUERY--------- */
+    .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        bottom: 110px;
+        width: 100%;
+        gap: 32px;
+    }
+
+    .botones button:nth-child(1){
+        width: 100%;
+        max-width: 240px;
+        
+    }
+
+    .botones button:nth-child(2){
+        width: 100%;
+        max-width: 240px; 
+    } 
+
+    /* ---------FOOTER MEDIA QUERY---------- */
+    .footer{
+        padding: 50px 40px;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: wrap;
+        
+    }
+    .footer p{
+        display: inline-block;
+        white-space: nowrap;
+        line-height: 2px;
+    }
+
+}
+
+
+@media (min-width:1200px){
+    .nav{
+        justify-content: space-evenly;
+        padding: 0 50px;
+    }
+    .lista{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+
+    }
+    .lista .nav__item{
+        padding: 0 12px;
+    }
+    .lista .nav__item .nav__link{
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 8px 2px;
+        font-weight: 500;
+        color: #171a20;
+    }
+}

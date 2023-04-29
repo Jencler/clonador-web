@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <div>
+        <header class="header">
+            <nav class="nav">
+                <a href="#" class="logotipo">
+                    <img src="./assets/svg/tesla_logotipo.svg" alt="Logotipo" width="120">
+                </a>
+                <ul class="lista">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Model S</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Model 3</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Model X</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Model Y</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Solar Roof</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Solar Panels</a>
+                    </li>
+                    
+                </ul>
+                <div>
+                    <ul class="lista">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Shop</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Account</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="menu" id="menu">Menu</button>
+                
+        <!------ASIDE MENU----------- -->
+        <aside class="aside">
+            <div class="aside__header">
+                
+                <img id="close_menu" src="./assets/img/close.png" alt="">
+            </div>
+            <div class="aside__text">
+                <p>Model S</p>
+                <p>Model 3</p>
+                <p>Model X</p>
+                <p>Model Y</p>
+                <p>Solar Roof</p>
+                <p>Solar Panels</p>
+                <p>Existing Inventory</p>
+                <p>Used Inventory</p>
+                <p>Trade-In</p>
+                <p>Test Drive</p>
+                <p>Insurance</p>
+                <p>Powerwall</p>
+                <p>Comercial energy</p>
+                <p>Utilities</p>
+                <p>Charging</p>
+                <p>Find Us</p>
+                <p>Support</p>
+                <p>Investor Relations</p>
+                <p>Shop</p>
+                <p>Account</p>
+                <p>More</p>
+                <div>
+                    <p>United States</p>
+                </div>
+            </div>
+            
+        </aside>
+            </nav>
+        </header>
+
+        <!-----------SECCION DE AUTOS------------ -->
+        <section class="autos_tesla">
+
+            <!---------MODELO 3 ROJO------------->
+        <div class="car__red">
+            <picture class="pictures">
+                <source media="(min-width:600px)" srcset="./assets/img/red_car_desktop.jpg">
+                <img src="./assets/img/car_red_mobile.jpg" alt="">
+            </picture>
+            <div class="text">
+                <h1>Model 3</h1>
+                <p>Schedule a Test Drive</p>
+            </div>
+            <div class="botones">
+                <button>Custom Order</button>
+                <button>Existing Inventory</button>
+            </div>
+            <p class="icon_arrow"><a href="#car_blue_modelY"><img src="./assets/img/down.png" alt=""></a></p>
+        </div>
+
+            <!---------MODELO Y AZUL------------->
+        <div class="car__blue" id="car_blue_modelY">
+            <picture>
+                <source media="(min-width:600px)" srcset="./assets/img/car_azul_desktop.jpg">
+                <img src="./assets/img/car_azul_mobile.jpg" alt="">
+            </picture>
+            <div class="text">
+                <h1>Model Y</h1>
+                <p>Schedule a Test Drive</p>
+            </div>
+            <div class="botones">
+                <button>Custom Order</button>
+                <button>Existing Inventory</button>
+            </div>
+        </div>
+
+            <!---------MODELO S RED------------->
+        <div class="car__blue">
+            <picture>
+                <source media="(min-width:600px)" srcset="./assets/img/modelo_s_desktop.jpg">
+                <img src="./assets/img/modelo_s_mobile.jpg" alt="">
+            </picture>
+            <div class="text">
+                <h1>Model S</h1>
+                <p>Schedule a Test Drive</p>
+            </div>
+            <div class="botones">
+                <button>Custom Order</button>
+                <button>Existing Inventory</button>
+            </div>
+        </div>
+
+            <!---------MODELO X WHITE------------->
+        <div class="car__blue">
+            <picture>
+                <source media="(min-width:600px)" srcset="./assets/img/car_white_desktop.jpg">
+                <img src="./assets/img/car_white_mobile.jpg" alt="">
+            </picture>
+            <div class="text">
+                <h1>Model X</h1>
+                <p>Schedule a Test Drive</p>
+            </div>
+            <div class="botones">
+                <button>Custom Order</button>
+                <button>Existing Inventory</button>
+            </div>
+        </div>
+
+            <!---------SOLAR PANEL------------->
+        <div class="car__blue">
+            <picture>
+                <source media="(min-width:600px)" srcset="./assets/img/panel_desktop.jpg">
+                <img src="./assets/img/panel_mobile.jpg" alt="">
+            </picture>
+            <div class="text">
+                <h1>Solar Panels</h1>
+                <p>Lowest Cost solar Panels in America</p>
+            </div>
+            <div class="botones">
+                <button>Order Now</button>
+                <button>Learn More</button>
+            </div>
+        </div>
+
+            <!---------SOLAR ROOF------------->
+        <div class="car__blue">
+            <picture>
+                <source media="(min-width:600px)" srcset="./assets/img/solar_desktop.webp">
+                <img src="./assets/img/solar_mobile.webp" alt="">
+            </picture>
+            <div class="text">
+                <h1>Solar Roof</h1>
+                <p>Produce Clean energy From Your Roof</p>
+            </div>
+            <div class="botones ">
+                <button>Order Now</button>
+                <button>Learn More</button>
+            </div>
+        </div>
+
+            <!---------ACCESORIOS------------->
+        <div class="car__blue">
+            <picture>
+                <source media="(min-width:555px)" srcset="./assets/img/accesorios_desktop.jpg">
+                <img src="./assets/img/accesorios_mobile.jpg" alt="">
+            </picture>
+            <div class="text">
+                <h1>Accessories</h1>
+            </div>
+            <div class="botones">
+                <button>Shop Now</button>
+            </div>
+        </div>
+
+        </section>
+
+        <!----------------FOOTER-------------------------->
+        <footer class="footer">
+            <p>Tesla © 2022</p>
+            <p>Privacy & Legal</p>
+            <p>Vehicle Recalls</p>
+            <p>Careers</p>
+            <p>News</p>
+            <p>Engage</p>
+            <p>Location</p>
+        </footer>
+
+        <!------ASIDE MENU----------- -->
+        
+    </div>  
+    <script src="./js/menu.js"></script>  
+</body>
+</html>
